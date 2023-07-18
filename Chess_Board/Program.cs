@@ -1,4 +1,5 @@
 ﻿using System;
+using ChessBoardModel;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,11 +9,10 @@ namespace Chess_Board
 {
     class Program 
     {
-        
 
         static void Main(string[] args)
         {
-            Board myBoard = new Board(5);
+            Board myBoard = new Board(8);
 
             //show the empty chess board
 
@@ -23,8 +23,6 @@ namespace Chess_Board
             //print the chess board . Use an X for an occupied square and + for a legal move and . for an empty cell
 
             //wait for another enter key before ending the program
-
-            myBoard.Initialize();
 
         }
     }
